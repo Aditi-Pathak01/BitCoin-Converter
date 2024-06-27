@@ -13,6 +13,10 @@ function App() {
   const convert = () => {
     setCamt(amount * cryptoInfo[to].value);
   };
+  const swap = ()=>{
+    setFrom(to)
+    setTo(from)
+  }
 
   return (
     <>
@@ -54,6 +58,12 @@ function App() {
             }}
           >
             Convert {from.toUpperCase()} to {to.toUpperCase()}
+          </button>
+          <button
+            className="absolute bottom-[52%] bg-blue-950 text-yellow-100 p-2 rounded-md"
+            onClick={swap}
+          >
+            Swap
           </button>
         </div>
       </div>
