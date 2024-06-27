@@ -36,7 +36,6 @@ function App() {
             amtChange={(amount) => {
               setAmount(amount);
             }}
-            cryptoOpts={options}
             cryptoChange={(crypto) => {
               setFrom(crypto);
             }}
