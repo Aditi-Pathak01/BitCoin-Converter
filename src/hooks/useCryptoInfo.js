@@ -8,4 +8,5 @@ export default function useCryptoInfo() {
       .then((res) => setData(res.rates))
   }, []);
   return data;
+
 }

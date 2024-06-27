@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { InputBox } from "./components";
 import useCryptoInfo from "./hooks/useCryptoInfo";
 
@@ -9,14 +9,16 @@ function App() {
   let [to, setTo] = useState("eth");
   let cryptoInfo = useCryptoInfo(from);
   let options = Object.keys(cryptoInfo);
+  console.log(cryptoInfo);
 
   const convert = () => {
     setCamt(amount * cryptoInfo[to].value);
   };
-  const swap = ()=>{
-    setFrom(to)
-    setTo(from)
-  }
+
+  const swap = () => {
+    setFrom(to);
+    setTo(from);
+  };
 
   return (
     <>
