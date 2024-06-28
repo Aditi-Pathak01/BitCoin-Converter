@@ -39,9 +39,6 @@ function App() {
             label="TO"
             amt={cAmt}
             sc={to}
-            amtChange={(amount) => {
-              setCamt(amount);
-            }}
             cryptoOpts={options}
             cryptoChange={(crypto) => {
               setTo(crypto);
