@@ -5,10 +5,8 @@ function InputBox({
   amt,
   amtChange,
   sc,
-  cryptoOpts = ['Bitcoin'],
+  cryptoOpts = ["Bitcoin"],
   cryptoChange,
-
-  
 }) {
   return (
     <div className="w-full h-1/3 flex justify-around items-center gap-4 border border-gray-300 rounded-xl px-2">
@@ -18,7 +16,7 @@ function InputBox({
         </label>
         <input
           type="number"
-          className="w-[80%] border border-gray-300 text-black rounded-md p-[0.2vh] pl-2 outline-none"
+          className="w-[50%] border border-gray-300 text-black rounded-md p-[0.2vh] pl-2 outline-none"
           value={amt}
           onChange={(e) => {
             amtChange && amtChange(Number(e.target.value));
